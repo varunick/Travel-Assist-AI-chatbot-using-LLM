@@ -1,0 +1,51 @@
+<html> 
+    <head>
+        <title>
+            TravelAssist
+        </title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    </head>
+    <body> 
+        <div class="outercontainer">
+            <div class="center">
+                <h1 id="titlestyle">
+                    TravelAssist
+                </h1>
+            </div>
+            <div class="conversationcontainer" id="chatcontainer">
+                {% for entry in name_xyz %}
+                <div class="{% if entry.bot %}bot{% else %}user{% endif %}"> 
+                    {% if entry.bot %}
+                    {{ entry.bot }}
+                    {% else %}
+                    {{ entry.user }}
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <form action = "/holiday" method="POST" class="center">
+                <input type ="text" name="user_input_message" id = "inputtextbox">
+                <input type="submit" value=" " id="submitbutton">
+            </form>
+
+            <form action="/end_conv" method="POST" class="center">
+                <button type="submit">END CONVERSATION</button>
+            </form>
+    </div>
+
+    <script>
+        // Scroll to the bottom of the chat container on page load and after a new message is sent
+        function scrollToBottom() {
+            var chatContainer = document.getElementById('chatcontainer');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    
+        window.onload = scrollToBottom;
+
+    </script>
+
+
+
+</body> 
+</html>

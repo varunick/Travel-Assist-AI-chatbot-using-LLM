@@ -1,0 +1,100 @@
+button {
+    /* These styles apply to all buttons */
+    color: white; /* Color of the button text */
+    background-color: rgb(165, 152, 111); /* Background color of the button */
+    border: 2px solid black; /* Border around the button. It's 2px wide, solid, and black */
+    padding: 10px; /* Space between the button text and the edge of the button */
+    width: 200px; /* The button is 200px wide */
+    margin-top: 20px; /* Space between the top of the button and the element above it */
+    border-radius: 10px; /* Rounds the corners of the button */
+    cursor: pointer; /* The cursor turns into a hand when it's over the button */
+    font-family: 'Courier New', Courier, monospace; /* Font of the text. If 'Courier New' isn't available, the browser will try to use 'Courier'. If that's not available, it will use any monospace font. */
+}
+
+.outercontainer {
+    /* These styles apply to the div with class "outercontainer" */
+    max-width: 800px; /* Maximum width of the container. If the screen is narrower than 800px, the container will shrink to fit it */
+    margin: 0 auto; /* Centers the container. 'auto' makes the left and right margins equal */
+    padding: 20px; /* Space between the content of the container and its borders */
+    border: 5px solid #ccc; /* Border around the container. It's 5px wide, solid, and a light grey (#ccc) */
+    border-radius: 50px; /* Rounds the corners of the border */
+}
+
+.conversationcontainer{
+    /* These styles apply to the div with class "conversation" */
+    border: 5px solid #ccc; /* Border around the conversation. It's 5px wide, solid, and a light grey (#ccc) */
+    padding: 10px; /* Space between the content of the conversation and its borders */
+    height: 500px; /* The conversation box is always 500px tall */
+    background-color: #f3f3f3; /* Background color of the conversation */
+    overflow-y: scroll; /* If the conversation gets too tall for its container, it will become scrollable */
+    border-radius: 50px; /* Rounds the corners of the border */
+}
+
+#titlestyle{
+    color: black; /* Color of the heading text */
+    background-color: rgb(227, 224, 212); /* Background color of the heading */
+    border: 2px solid black; /* Border around the heading. It's 2px wide, solid, and black */
+    padding: 10px; /* Space between the content of the heading and its borders */
+    margin-top: 20px; /* Space between the top of the heading and the element above it */
+    border-radius: 10px; /* Rounds the corners of the border */
+    width:fit-content; /* The width of the heading is just enough to fit its content */
+}
+
+#inputtextbox{
+    /* These styles apply to text input fields */
+    width: 85%; /* Text inputs are 85% as wide as their container */
+    border: 5px solid #ccc; /* Border around the text inputs. It's 5px wide, solid, and a light grey (#ccc) */
+    padding: 10px; /* Space between the text in the input and the edge of the input field */
+    background-color: #f3f3f3f3; /* Background color of the text input field */
+    border-radius: 10px; /* Rounds the corners of the text input field */
+}
+
+#submitbutton {
+    /* These styles apply to the submit button */
+    background: url(/static/send-icon.png) no-repeat center center; /* Background image of the button. The image is centered and doesn't repeat */
+    background-size: cover; /* The image covers the entire background of the button */
+    border: none; /* The button has no border */
+    width: 40px; /* The button is 40px wide */
+    height: 40px; /* The button is 40px tall */
+    cursor: pointer; /* The cursor turns into a hand when it's over the button */
+}
+
+.user {
+    /* These styles apply to divs with class "user", i.e., user messages */
+    color: white; /* Color of the user's text */
+    background-color: rgb(0, 195, 255); /* Background color of the user's messages */
+    padding: 8px; /* Space between the user's text and the edge of its container */
+    border-radius: 10px; /* Rounds the corners of the user's messages */
+    float: right; /* Floats the user's messages to the right */
+    clear: both; /* Positions the user's messages below any floated elements that came before it */
+    max-width: 80%; /* Maximum width of the user's messages */
+    margin: 5px;
+}
+
+.bot { 
+    /* Same as above, but for the bot's messages */
+    color: white;
+    background-color: rgb(0, 128, 90);
+    padding: 8px;
+    border-radius: 10px;
+    float: left;
+    clear: both;
+    max-width: 80%;
+    margin: 5px;
+}
+
+.center {
+    /* These styles apply to elements with class "center" */
+    display: flex; /* The center element is a flex container */
+    justify-content: center; /* The items inside the flex container are centered along the horizontal line */
+}
+
+form {
+    /* These styles apply to all forms */
+    margin: 10px; /* Space around the outside of each form */
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Font of the text. If 'Courier New' isn't available, the browser will try to use 'Courier'. If that's not available, it will use any monospace font. */
+    margin: 50px; /* Space around the outside of the <body> */
+}
